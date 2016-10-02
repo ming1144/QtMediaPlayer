@@ -1,0 +1,96 @@
+﻿已經開始建置於 2016/9/28 下午 10:13:16。
+     1>節點 2 (Rebuild 目標) 上的專案 "C:\Users\mmplab\Desktop\cximage\CxImage\cximage.vcxproj"。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\jpeg /I..\png /I..\zlib /I..\mng /I..\tiff /I..\j2k /I..\jasper\include /Zi /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _LIB /D JAS_WIN_MSVC_BUILD /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0600 /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc120.pdb" /Gd /TP /errorReport:prompt tif_xfile.cpp ximabmp.cpp ximadsp.cpp ximaenc.cpp ximaexif.cpp xImage.cpp ximagif.cpp ximahist.cpp ximaico.cpp ximainfo.cpp ximaint.cpp ximajas.cpp ximajbg.cpp ximajpg.cpp ximalpha.cpp ximalyr.cpp ximamng.cpp ximapal.cpp ximapcx.cpp ximapng.cpp ximaraw.cpp ximasel.cpp ximaska.cpp ximatga.cpp ximath.cpp ximatif.cpp ximatran.cpp ximawbmp.cpp ximawmf.cpp ximawnd.cpp xmemfile.cpp
+         tif_xfile.cpp
+         ximabmp.cpp
+         ximadsp.cpp
+     1>ximadsp.cpp(2976): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         ximaenc.cpp
+     1>c:\users\mmplab\desktop\cximage\cximage\ximajas.h(65): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>c:\users\mmplab\desktop\cximage\cximage\ximajas.h(67): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>c:\users\mmplab\desktop\cximage\cximage\ximaraw.h(75): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>c:\users\mmplab\desktop\cximage\cximage\ximaraw.h(78): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+         ximaexif.cpp
+     1>ximaexif.cpp(101): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>ximaexif.cpp(127): warning C4267: '=' : 將 'size_t' 轉換為 'int'，資料可能遺失
+         xImage.cpp
+         ximagif.cpp
+         ximahist.cpp
+         ximaico.cpp
+         ximainfo.cpp
+         ximaint.cpp
+         ximajas.cpp
+     1>c:\users\mmplab\desktop\cximage\cximage\ximajas.h(65): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>c:\users\mmplab\desktop\cximage\cximage\ximajas.h(67): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+         ximajbg.cpp
+         ximajpg.cpp
+         ximalpha.cpp
+         ximalyr.cpp
+         ximamng.cpp
+         ximapal.cpp
+         ximapcx.cpp
+         ximapng.cpp
+         正在產生程式碼...
+         正在編譯...
+         ximaraw.cpp
+     1>c:\users\mmplab\desktop\cximage\cximage\ximaraw.h(75): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+     1>c:\users\mmplab\desktop\cximage\cximage\ximaraw.h(78): warning C4267: 'return' : 將 'size_t' 轉換為 'int'，資料可能遺失
+         ximasel.cpp
+         ximaska.cpp
+         ximatga.cpp
+         ximath.cpp
+         ximatif.cpp
+         ximatran.cpp
+         ximawbmp.cpp
+         ximawmf.cpp
+     1>ximawmf.cpp(298): warning C4267: '=' : 將 'size_t' 轉換為 'long'，資料可能遺失
+     1>ximawmf.cpp(330): warning C4267: '=' : 將 'size_t' 轉換為 'long'，資料可能遺失
+     1>ximawmf.cpp(345): warning C4267: '=' : 將 'size_t' 轉換為 'long'，資料可能遺失
+     1>ximawmf.cpp(411): warning C4267: '正在初始化' : 將 'size_t' 轉換為 'long'，資料可能遺失
+     1>ximawmf.cpp(422): warning C4267: '=' : 將 'size_t' 轉換為 'long'，資料可能遺失
+         ximawnd.cpp
+     1>ximawnd.cpp(207): warning C4244: '正在初始化' : 將 'SIZE_T' 轉換為 'DWORD'，由於類型不同，可能導致資料遺失
+         xmemfile.cpp
+         正在產生程式碼...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(C:\Users\mmplab\Desktop\cximage\x64\Release\CxImage.lib) does not match the Library's OutputFile property value (C:\Users\mmplab\Desktop\cximage\CxImage\x64\Release\cximage.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:".\x64\Release\cximage.lib" /NOLOGO /MACHINE:X64 .\Release\tif_xfile.obj
+         .\Release\ximabmp.obj
+         .\Release\ximadsp.obj
+         .\Release\ximaenc.obj
+         .\Release\ximaexif.obj
+         .\Release\xImage.obj
+         .\Release\ximagif.obj
+         .\Release\ximahist.obj
+         .\Release\ximaico.obj
+         .\Release\ximainfo.obj
+         .\Release\ximaint.obj
+         .\Release\ximajas.obj
+         .\Release\ximajbg.obj
+         .\Release\ximajpg.obj
+         .\Release\ximalpha.obj
+         .\Release\ximalyr.obj
+         .\Release\ximamng.obj
+         .\Release\ximapal.obj
+         .\Release\ximapcx.obj
+         .\Release\ximapng.obj
+         .\Release\ximaraw.obj
+         .\Release\ximasel.obj
+         .\Release\ximaska.obj
+         .\Release\ximatga.obj
+         .\Release\ximath.obj
+         .\Release\ximatif.obj
+         .\Release\ximatran.obj
+         .\Release\ximawbmp.obj
+         .\Release\ximawmf.obj
+         .\Release\ximawnd.obj
+         .\Release\xmemfile.obj
+     1>ximamng.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+     1>ximajbg.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+         cximage.vcxproj -> C:\Users\mmplab\Desktop\cximage\x64\Release\CxImage.lib
+     1>專案 "C:\Users\mmplab\Desktop\cximage\CxImage\cximage.vcxproj" (Rebuild 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:33.04

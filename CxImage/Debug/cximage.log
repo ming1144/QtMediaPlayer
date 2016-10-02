@@ -1,0 +1,78 @@
+﻿已經開始建置於 2016/9/27 下午 11:07:00。
+     1>節點 2 (Build 目標) 上的專案 "C:\Users\mmplab\Desktop\cximage\CxImage\cximage.vcxproj"。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\jpeg /I..\png /I..\zlib /I..\mng /I..\tiff /I..\j2k /I..\jasper\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D JAS_WIN_MSVC_BUILD /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0600 /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt tif_xfile.cpp ximabmp.cpp ximadsp.cpp ximaenc.cpp ximaexif.cpp xImage.cpp ximagif.cpp ximahist.cpp ximaico.cpp ximainfo.cpp ximaint.cpp ximajas.cpp ximajbg.cpp ximajpg.cpp ximalpha.cpp ximalyr.cpp ximamng.cpp ximapal.cpp ximapcx.cpp ximapng.cpp ximaraw.cpp ximasel.cpp ximaska.cpp ximatga.cpp ximath.cpp ximatif.cpp ximatran.cpp ximawbmp.cpp ximawmf.cpp ximawnd.cpp xmemfile.cpp
+         xmemfile.cpp
+         ximawnd.cpp
+         ximawmf.cpp
+         ximawbmp.cpp
+         ximatran.cpp
+         ximatif.cpp
+         ximath.cpp
+         ximatga.cpp
+         ximaska.cpp
+         ximasel.cpp
+         ximaraw.cpp
+         ximapng.cpp
+         ximapcx.cpp
+         ximapal.cpp
+         ximamng.cpp
+         ximalyr.cpp
+         ximalpha.cpp
+         ximajpg.cpp
+         ximajbg.cpp
+         ximajas.cpp
+         正在產生程式碼...
+         正在編譯...
+         ximaint.cpp
+         ximainfo.cpp
+         ximaico.cpp
+         ximahist.cpp
+         ximagif.cpp
+         xImage.cpp
+         ximaexif.cpp
+         ximaenc.cpp
+         ximadsp.cpp
+     1>c:\users\mmplab\desktop\cximage\cximage\ximadsp.cpp(2976): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+         ximabmp.cpp
+         tif_xfile.cpp
+         正在產生程式碼...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\cximage.lib" /NOLOGO .\Debug\tif_xfile.obj
+         .\Debug\ximabmp.obj
+         .\Debug\ximadsp.obj
+         .\Debug\ximaenc.obj
+         .\Debug\ximaexif.obj
+         .\Debug\xImage.obj
+         .\Debug\ximagif.obj
+         .\Debug\ximahist.obj
+         .\Debug\ximaico.obj
+         .\Debug\ximainfo.obj
+         .\Debug\ximaint.obj
+         .\Debug\ximajas.obj
+         .\Debug\ximajbg.obj
+         .\Debug\ximajpg.obj
+         .\Debug\ximalpha.obj
+         .\Debug\ximalyr.obj
+         .\Debug\ximamng.obj
+         .\Debug\ximapal.obj
+         .\Debug\ximapcx.obj
+         .\Debug\ximapng.obj
+         .\Debug\ximaraw.obj
+         .\Debug\ximasel.obj
+         .\Debug\ximaska.obj
+         .\Debug\ximatga.obj
+         .\Debug\ximath.obj
+         .\Debug\ximatif.obj
+         .\Debug\ximatran.obj
+         .\Debug\ximawbmp.obj
+         .\Debug\ximawmf.obj
+         .\Debug\ximawnd.obj
+         .\Debug\xmemfile.obj
+     1>ximajbg.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+         cximage.vcxproj -> C:\Users\mmplab\Desktop\cximage\CxImage\.\Debug\CxImage.lib
+     1>專案 "C:\Users\mmplab\Desktop\cximage\CxImage\cximage.vcxproj" (Build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:33.06
