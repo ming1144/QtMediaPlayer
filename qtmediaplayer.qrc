@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="QtMediaPlayer">
+    <file>icon/pause.png</file>
+    <file>icon/play.png</file>
+    <file>icon/open.png</file>
+  </qresource>
+</RCC>
