@@ -13,13 +13,17 @@ class QtMediaPlayer : public QMainWindow
 public:
 	QtMediaPlayer(QWidget *parent = 0);
 	~QtMediaPlayer();
+	void appOpen();
 
 public slots:
 	void on_actionTBOpenFile_triggered();
 	void on_actionMenuOpenFile_triggered();
+	void on_fileList_clicked(const QModelIndex &);
 
 private:
 	Ui::QtMediaPlayerClass ui;
+	QStringList filenameList;
+	//QStringListModel* filenameModel;
 };
 
 

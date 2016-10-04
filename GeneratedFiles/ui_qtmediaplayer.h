@@ -17,6 +17,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -24,7 +25,6 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -38,12 +38,13 @@ public:
     QAction *actionMenuOpenFile;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
-    QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QGraphicsView *graphicsViewOrigin;
     QGraphicsView *graphicsViewAfter;
-    QTextBrowser *textBrowser;
     QSpacerItem *verticalSpacer;
+    QHBoxLayout *horizontalLayout_2;
+    QListView *fileList;
+    QTextBrowser *textBrowser;
     QMenuBar *menuBar;
     QMenu *menu;
     QStatusBar *statusBar;
@@ -78,9 +79,6 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
@@ -95,24 +93,32 @@ public:
         horizontalLayout->addWidget(graphicsViewAfter);
 
 
-        verticalLayout->addLayout(horizontalLayout);
+        gridLayout->addLayout(horizontalLayout, 0, 0, 1, 1);
+
+        verticalSpacer = new QSpacerItem(20, 500, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer, 0, 1, 2, 1);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        fileList = new QListView(centralWidget);
+        fileList->setObjectName(QStringLiteral("fileList"));
+
+        horizontalLayout_2->addWidget(fileList);
 
         textBrowser = new QTextBrowser(centralWidget);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
 
-        verticalLayout->addWidget(textBrowser);
+        horizontalLayout_2->addWidget(textBrowser);
 
 
-        gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 500, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 0, 1, 1, 1);
+        gridLayout->addLayout(horizontalLayout_2, 1, 0, 1, 1);
 
         QtMediaPlayerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(QtMediaPlayerClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 779, 21));
+        menuBar->setGeometry(QRect(0, 0, 779, 22));
         menu = new QMenu(menuBar);
         menu->setObjectName(QStringLiteral("menu"));
         QtMediaPlayerClass->setMenuBar(menuBar);
