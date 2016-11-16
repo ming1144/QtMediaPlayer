@@ -33,13 +33,13 @@ void QtMediaPlayer::on_actionTBOpenFile_triggered(){
 
 	BYTE *buffer = NULL;
 	long len = 0;
-	Image.Encode(buffer, len, CXIMAGE_FORMAT_TIF);
+	Image.Encode(buffer, len, CXIMAGE_FORMAT_PNG);
 
-	CxImage dst(buffer, len, CXIMAGE_FORMAT_TIF);
+	CxImage dst(buffer, len, CXIMAGE_FORMAT_PNG);
 
 	QImage Qimage(dst.GetBits(), dst.GetWidth(), dst.GetHeight(), QImage::Format_RGB888);
 	QImage frame = Qimage.rgbSwapped().mirrored();
-	QPixmap map = QPixmap::fromImage(frame);
+	QPixmap map = QPixmap::fromImage(Qimage);
 	QGraphicsScene* scene = new QGraphicsScene();
 	QGraphicsPixmapItem* item = new QGraphicsPixmapItem(map);
 	scene->addItem(item);
@@ -68,9 +68,9 @@ void QtMediaPlayer::on_actionMenuOpenFile_triggered(){
 
 	BYTE *buffer = NULL;
 	long len = 0;
-	Image.Encode(buffer, len, CXIMAGE_FORMAT_TIF);
+	Image.Encode(buffer, len, CXIMAGE_FORMAT_PNG);
 
-	CxImage dst(buffer, len, CXIMAGE_FORMAT_TIF);
+	CxImage dst(buffer, len, CXIMAGE_FORMAT_PNG);
 
 	QImage Qimage(dst.GetBits(), dst.GetWidth(), dst.GetHeight(), QImage::Format_RGB888);
 	QImage frame = Qimage.rgbSwapped().mirrored();
@@ -104,9 +104,9 @@ void QtMediaPlayer::appOpen()
 
 	BYTE *buffer = NULL;
 	long len = 0;
-	Image.Encode(buffer, len, CXIMAGE_FORMAT_TIF);
+	Image.Encode(buffer, len, CXIMAGE_FORMAT_PNG);
 
-	CxImage dst(buffer, len, CXIMAGE_FORMAT_TIF);
+	CxImage dst(buffer, len, CXIMAGE_FORMAT_PNG);
 
 	QImage Qimage(dst.GetBits(), dst.GetWidth(), dst.GetHeight(), QImage::Format_RGB888);
 	QImage frame = Qimage.rgbSwapped().mirrored();
@@ -129,9 +129,9 @@ void QtMediaPlayer::on_fileList_clicked(const QModelIndex &Index)
 
 	BYTE *buffer = NULL;
 	long len = 0;
-	Image.Encode(buffer, len, CXIMAGE_FORMAT_TIF);
+	Image.Encode(buffer, len, CXIMAGE_FORMAT_PNG);
 
-	CxImage dst(buffer, len, CXIMAGE_FORMAT_TIF);
+	CxImage dst(buffer, len, CXIMAGE_FORMAT_PNG);
 
 	QImage Qimage(dst.GetBits(), dst.GetWidth(), dst.GetHeight(), QImage::Format_RGB888);
 	QImage frame = Qimage.rgbSwapped().mirrored();
