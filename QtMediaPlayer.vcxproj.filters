@@ -50,6 +50,9 @@
     <ClCompile Include="GeneratedFiles\qrc_qtmediaplayer.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="snakeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="qtmediaplayer.h">
@@ -65,6 +68,12 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_qtmediaplayer.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="snakeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

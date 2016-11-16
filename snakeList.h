@@ -5,11 +5,11 @@
 #include <vector>
 using namespace std;
 
-#define AUTOADAPT_MAXLEN  16
-#define AUTOADAPT  true
-#define	AUTOADAPT_LOOP  10
-#define	AUTOADAPT_MINLEN  8
-#define	MAXITERATION  1000// double alpha=1.1, beta=1.2, gamma=1.5, delta=3.0;
+//#define	AUTOADAPT_MAXLEN  16
+//#define	AUTOADAPT  true
+//#define	AUTOADAPT_LOOP  10
+//#define	AUTOADAPT_MINLEN  8
+//#define	MAXITERATION  1000// double alpha=1.1, beta=1.2, gamma=1.5, delta=3.0;
 // 
 
 
